@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import './base.css';
+
+@layer components {
+  .input {
+    /* @apply block border-0 py-1 px-4 text-base bg-g-1 text-b-1; */
+    @apply block py-1 px-4 text-base border-b-1 border-solid border text-b-1 rounded-sm;
+    &::placeholder {
+      @apply text-b-1/50
+    }
+  }
+}
